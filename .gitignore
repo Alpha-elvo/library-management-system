@@ -4,3 +4,4 @@ api/.env
 api/dist/
 api/generated/
 api/node_modules/
+*.tsbuildinfo
