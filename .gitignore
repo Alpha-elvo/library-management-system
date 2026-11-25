@@ -1,7 +1,33 @@
-
+# Environment secrets
 .env
-api/.env
-api/dist/
-api/generated/
+.env.*
+
+# Dependencies
+node_modules/
 api/node_modules/
+client/node_modules/
+
+# Build output and generated files
+api/dist/
+client/dist/
+api/generated/
 *.tsbuildinfo
+
+# AI/editor support files not required for submission
+api/.agents/
+api/.claude/
+api/.windsurf/
+api/.gitattributes
+api/.npmrc
+api/.oxlintrc.json
+api/.prettierrc
+api/AGENTS.md
+api/skills-lock.json
+
+# Accidental root-level npm setup
+/package.json
+/package-lock.json
+
+# Keep example environment templates
+!.env.example
+!**/.env.example
